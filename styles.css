@@ -1,0 +1,12 @@
+.container{
+    width: 1000px;
+    height: 1000px;
+}
+.container > div{
+    background-color: black;
+}
+
+/*.container :hover{
+    background-color: aqua;
+}
+*/
