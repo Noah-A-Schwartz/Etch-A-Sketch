@@ -6,7 +6,7 @@ function updateGridSize(size){
     container.style.gridTemplateColumns = "repeat(" + size + ", 1fr)";
     container.style.gridTemplateRows = "repeat(" + size + ", 1fr)";
     for(let i = 0; i < size**2; i++){
-        container.innerHTML = container.innerHTML + "<div></div>";
+        container.appendChild(document.createElement("div"));
     }
     container.childNodes.forEach(addEvent);
     container.childNodes.forEach(resetColor);
