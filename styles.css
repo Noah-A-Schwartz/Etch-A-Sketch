@@ -1,12 +1,47 @@
-.container{
-    width: 1000px;
-    height: 1000px;
-}
-.container > div{
-    background-color: black;
+body {
+    margin: 150px auto;
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-flow: column;
+    padding: 50px;
+    background-color: khaki;
 }
 
-/*.container :hover{
-    background-color: aqua;
+.options{
+    width: auto;
+    border-radius: 50%;
+    display: inline-flex;
+    margin: auto;
+    padding: 15px;
 }
-*/
+.options > *{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: lightsalmon;
+    border-color: lightseagreen;
+    border-width: 3px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    display: inline-flexbox;
+}
+.options > *:hover{
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  .options > *:focus{
+      outline: none;
+  }
+
+.container{
+    width: 500px;
+    height: 500px;
+}
+.container > div{
+    background-color: gray
+}

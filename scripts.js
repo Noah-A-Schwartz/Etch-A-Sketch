@@ -1,7 +1,10 @@
 let size = 16;
+let color = 'red';
+let defaultColor = 'gray';
 let container = document.getElementsByClassName("container")[0];
 updateGridSize(size);
 function updateGridSize(size){
+    document.getElementById("size-button").innerText = "Size: " + size + "x" + size;
     container.innerHTML = "";
     container.style.gridTemplateColumns = "repeat(" + size + ", 1fr)";
     container.style.gridTemplateRows = "repeat(" + size + ", 1fr)";
@@ -18,7 +21,7 @@ function getSize(){
 
 function addEvent(div){
     div.addEventListener("mouseenter", function(){
-        div.style.backgroundColor = 'red';
+        div.style.backgroundColor = color;
     });
 }
 function resetColorOnClick(){
@@ -26,6 +29,12 @@ function resetColorOnClick(){
      
 }
 function resetColor(div){
-    div.style.backgroundColor = 'black';
+    div.style.backgroundColor = defaultColor;
 } 
+
+function clickColor(e){
+    color = e.value;
+    container.childNodes.forEach(addEvent);
+    container.childNodes.forEach(resetColor);
+}
 
