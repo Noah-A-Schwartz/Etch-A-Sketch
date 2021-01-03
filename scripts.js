@@ -64,12 +64,12 @@ function clickColor(e){
 function setRainbow(){
     
     this.style.backgroundColor = rainbowColors[Math.floor(Math.random()*7)];
-    setTimeout(removeEvent(this), 0);
+    removeEvent(this);
 }
 
 function setColor(){
     this.style.backgroundColor = color;
-    setTimeout(removeEvent(this), 0);
+    removeEvent(this);
 }
 
 function removeEvent(div){
