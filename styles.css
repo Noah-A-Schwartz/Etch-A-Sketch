@@ -7,23 +7,30 @@ body {
     align-self: center;
     flex-flow: column;
     padding: 50px;
-    background-color: khaki;
+    background-color: #66549D;
+}
+h1{
+    color: #243242;
+    font-size: 5em;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .options{
     width: auto;
     border-radius: 10px;
     display: inline-flex;
-    border-color: black;
-    border-style:double;
+    border-color: #81A9B9;
+    border-style:solid;
     margin: 10px;
     padding: 5px;
 }
 .options > *{
     font-size: 20px;
     text-align: center;
-    color: white;
-    background-color: lightsalmon;
+    color: #243242;
+    background-color: #81A9B9
+    66549D;
     border-color: lightseagreen;
     border-width: 3px;
     width: 200px;
@@ -34,26 +41,26 @@ body {
     display: inline-flexbox;
 }
 .options > *:hover{
-    background-color: #4CAF50; /
-    color: white;
+    background-color: #81A9B9;
+    color:#ECEBEB;
   }
   .options > *:focus{
       outline: none;
   }
   
   #colorpicker{
-    background-color:black;
+    background-color:#ECEBEB;
     padding: 10px;
     border-radius: 0;
-    
   }
-
+  
 .container{
-    border-style: outset;
-    border-color: aqua;
+    background-color: #ECEBEB;
+    border-width: 1em;
+    border-style:ridge;
+    border-color: #81A9B9;
+    margin-top: 20px;
     width: 600px;
     height: 600px;
 }
-.container > div{
-    background-color:grey
-}
+
