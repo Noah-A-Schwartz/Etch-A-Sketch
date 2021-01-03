@@ -1,5 +1,5 @@
 body {
-    margin: 150px auto;
+    margin: auto;
     display: flex;
     flex: 100%;
     justify-content: center;
@@ -12,10 +12,12 @@ body {
 
 .options{
     width: auto;
-    border-radius: 50%;
+    border-radius: 10px;
     display: inline-flex;
-    margin: auto;
-    padding: 15px;
+    border-color: black;
+    border-style:double;
+    margin: 10px;
+    padding: 5px;
 }
 .options > *{
     font-size: 20px;
@@ -27,21 +29,31 @@ body {
     width: 200px;
     margin: 10px;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 6px;
+    border-style: ridge;
     display: inline-flexbox;
 }
 .options > *:hover{
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; /
     color: white;
   }
   .options > *:focus{
       outline: none;
   }
+  
+  #colorpicker{
+    background-color:black;
+    padding: 10px;
+    border-radius: 0;
+    
+  }
 
 .container{
-    width: 500px;
-    height: 500px;
+    border-style: outset;
+    border-color: aqua;
+    width: 600px;
+    height: 600px;
 }
 .container > div{
-    background-color: gray
+    background-color:grey
 }
