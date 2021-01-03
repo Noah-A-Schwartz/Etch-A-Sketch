@@ -11,6 +11,9 @@ body {
 }
 h1{
     color: #243242;
+    stroke: #ECEBEB;
+    -webkit-text-stroke: #ECEBEB;
+    -webkit-text-stroke-width: 2px;
     font-size: 5em;
     margin: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
